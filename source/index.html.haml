@@ -1,0 +1,15 @@
+---
+title: "#Shuffle105"
+---
+
+#wrapper
+  %h1
+    = current_page.data.title
+
+  %form(data-bind="submit: shuffle")
+    %input#query(type="text" data-bind="value: query")
+    %input(type="submit" value="Shuffle")
+
+  #result(data-bind="text: result, visible: result")
+
+  #tweet-button(data-bind="html: tweetButton, visible: result")

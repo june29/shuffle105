@@ -1,0 +1,40 @@
+#wrapper {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+  form {
+    margin-bottom: 20px;
+
+    input[type="text"] {
+      width: 600px;
+      padding: 10px 20px;
+    }
+
+    input[type="submit"] {
+      padding: 12px;
+    }
+  }
+
+  #result {
+    width: 696px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    word-wrap: break-word;
+    background-color: #f3f3f3;
+  }
+
+  #tweet-button {
+    a {
+      padding: 10px 40px;
+      text-decoration: none;
+      background-color: #00acee;
+      color: #fff;
+      border-radius: 4px;
+    }
+
+    a:hover {
+      opacity: 0.75;
+    }
+  }
+}
