@@ -2,11 +2,11 @@
 title: "#Shuffle105"
 ---
 
-#wrapper
+#main
   %h1
     = current_page.data.title
 
-  %form(data-bind="submit: shuffle")
+  %form.clearfix(data-bind="submit: shuffle")
     %input#query(type="text" data-bind="value: query")
     %input(type="submit" value="Shuffle")
 

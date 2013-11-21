@@ -13,4 +13,4 @@ class Shuffle105VM
     )
 
 $ ->
-  ko.applyBindings(new Shuffle105VM(), document.getElementById("wrapper"))
+  ko.applyBindings(new Shuffle105VM(), document.getElementById("main"))

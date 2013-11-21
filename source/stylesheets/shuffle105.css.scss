@@ -1,24 +1,44 @@
-#wrapper {
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+#main, footer {
   width: 800px;
   margin: 0 auto;
   text-align: center;
+}
+
+#main {
+  height: 400px;
 
   form {
     margin-bottom: 20px;
 
+    input {
+      box-sizing: border-box;
+    }
+
     input[type="text"] {
-      width: 600px;
+      float: left;
+      width: 700px;
       padding: 10px 20px;
     }
 
     input[type="submit"] {
+      float: right;
+      width: 90px;
       padding: 12px;
     }
   }
 
   #result {
-    width: 696px;
-    margin: 0 auto 20px;
+    box-sizing: border-box;
+    margin: 0 auto 30px;
     padding: 20px;
     word-wrap: break-word;
     background-color: #f3f3f3;
@@ -36,5 +56,16 @@
     a:hover {
       opacity: 0.75;
     }
+  }
+}
+
+footer {
+  padding-top: 10px;
+  border-top: 1px dotted #999;
+  font-size: 13px;
+  color: #666;
+
+  a {
+    color: #999;
   }
 }
